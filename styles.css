@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F6F6; /* Fog White */
+  color: #1C1C1E; /* Ink Black */
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 5rem 2rem;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 2.5rem;
+  color: #2C2A4A; /* Midnight Indigo */
+}
+
+.tagline {
+  font-size: 1.25rem;
+  color: #F26419; /* Forge Ember */
+  margin-top: 0.5rem;
+}
+
+.note {
+  margin-top: 2rem;
+  color: #EFA3B0; /* Sakura Rose */
+  font-style: italic;
+}
