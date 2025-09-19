@@ -1,1 +1,3 @@
-http://*    https://www.akariforge.com/:splat    301!
+# Force HTTPS and canonical www
+http://*                    https://www.akariforge.com/:splat   301!
+https://akariforge.com/*    https://www.akariforge.com/:splat   301!
