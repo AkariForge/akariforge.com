@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* ─── Raw colour values ───  */
+/* These are the source values. @theme tokens reference them via var() */
+:root {
+  --background: #f4f1eb; /* warm off-white */
+  --foreground: #171717;
+  --accent: #b07010; /* amber - light mode */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d0d0f; /* warm near-black */
+    --foreground: #ededed;
+    --accent: #e8a030; /* amber - dark mode */
+  }
+}
+
+/* ─── Tailwind v4 design tokens ─── */
+/* Everything here becomes a Tailwind utility class automatically */
+/* e.g. --color-accent becomes bg-accent, text-accent etc. */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+
+  --font-display: var(--font-fraunces); /* headings, hero text */
+  --font-body: var(--font-jetbrains-mono); /* body, labels, nav */
+}
+
+/* ─── Base styles ─── */
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
