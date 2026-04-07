@@ -54,7 +54,7 @@ Initialise the AkariForge project as a working Next.js 16 application with TypeS
 
 - [x] Confirm Prettier is active with `formatOnSave` and 2-space indentation
 - [x] Confirm ESLint is working (`npm run lint` returns no errors)
-- [ ] Push the initialised project to GitHub
+- [x] Push the initialised project to GitHub
 - [ ] Confirm Netlify deployment connects to the GitHub repo and deploys successfully
 
 ## Definition of Done
