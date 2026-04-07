@@ -3,9 +3,9 @@
 ## Last Session
 
 **Date:** 2026-04-07
-**Was working on:** Setting up this milestone file
-**Stopped because:**
-**Next immediate step:** Initialise the Next.js project - run `create-next-app`
+**Was working on:** Netlify deployment - resolved publish directory config via netlify.toml
+**Stopped because:** Milestone 1 complete
+**Next immediate step:** Create milestone-2 file and begin core pages and navigation
 **Open question / gotcha:**
 
 ---
@@ -55,13 +55,13 @@ Initialise the AkariForge project as a working Next.js 16 application with TypeS
 - [x] Confirm Prettier is active with `formatOnSave` and 2-space indentation
 - [x] Confirm ESLint is working (`npm run lint` returns no errors)
 - [x] Push the initialised project to GitHub
-- [ ] Confirm Netlify deployment connects to the GitHub repo and deploys successfully
+- [x] Confirm Netlify deployment connects to the GitHub repo and deploys successfully
 
 ## Definition of Done
 
-- [ ] `npm run dev` starts without errors and the app is visible at `http://localhost:3000`
-- [ ] `npm run lint` returns no errors
-- [ ] Folder structure matches the conventions documented in `OVERVIEW.md`
-- [ ] Design tokens are defined in `globals.css` under `@theme` - no hardcoded colour or font values anywhere
-- [ ] Fraunces and JetBrains Mono are loading correctly on the browser
-- [ ] Project is pushed to GitHub and the Netlify deployment succeeds
+- [x] `npm run dev` starts without errors and the app is visible at `http://localhost:3000`
+- [x] `npm run lint` returns no errors
+- [x] Folder structure matches the conventions documented in `OVERVIEW.md`
+- [x] Design tokens are defined in `globals.css` under `@theme` - no hardcoded colour or font values anywhere
+- [x] Fraunces and JetBrains Mono are loading correctly on the browser
+- [x] Project is pushed to GitHub and the Netlify deployment succeeds
