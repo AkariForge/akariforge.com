@@ -18,7 +18,7 @@ extensions to automation tools. It shows my self-directed approach to how I lear
 
 ## Milestones
 
-- [ ] Milestone 1 - Project initialisation
+- [x] Milestone 1 - Project initialisation
 - [ ] Milestone 2 - Core pages and navigation
 - [ ] Milestone 3 - Dynamic project pages
 - [ ] Milestone 4 - Store implementation
