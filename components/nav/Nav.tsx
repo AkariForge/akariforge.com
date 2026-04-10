@@ -8,7 +8,7 @@ export default function Nav() {
         href="/"
         className="font-display text-[17px] font-semibold tracking-[-0.02em] text-text no-underline"
       >
-        AkariForge
+        Akari<span className="text-accent">Forge</span>
       </Link>
       <ul className="flex items-center gap-8 list-none">
         <li>
