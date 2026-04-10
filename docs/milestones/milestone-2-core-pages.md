@@ -2,10 +2,10 @@
 
 ## Last Session
 
-**Date:** 2026-04-07
-**Was working on:** Importing the CSS components from the `akariforge-homepage-html` prototype file.
-**Stopped because:** Time of day (it's late)
-**Next immediate step:** Finish importing the CSS components.
+**Date:** 2026-04-10
+**Was working on:** Section 1. Shared layout
+**Stopped because:** Completed Section 1
+**Next immediate step:** Start section 2 by deciding all the fields on the project type
 **Open question / gotcha:**
 
 ---
@@ -19,17 +19,17 @@ Build all core pages and shared layout components so the site is fully navigable
 ### 1. Shared layout (Nav + footer)
 
 - [x] Create `components/nav/Nav.tsx` with site links and theme toggle
-- [ ] Create `components/footer/Footer.tsx`
-- [ ] Wire both into `app/layout.tsx` around `{children}`
-- [ ] Wrap `{children}` in `<main className="flex-1">` so footer sticks to bottom on short pages
+- [x] Create `components/footer/Footer.tsx`
+- [x] Wire both into `app/layout.tsx` around `{children}`
+- [x] Wrap `{children}` in `<main className="flex-1">` so footer sticks to bottom on short pages
 
 ### 2. Project data layer
 
-- [ ] Decide and document all fields an the Project type (`slug`, `title`, `category`, `description`, `status`, `tags`, `links`, etc.)
-- [ ] Define the Project type in `lib/types.ts`
-- [ ] Define the `ProjectStatus` union type (e.g. `"active"` | `"available"` | `"in-development"`)
-- [ ] Populate `lib/projects.ts` with the three real projects: `ContextLoop`, `USB Deploy Suite`, `Dev ToolBox`
-- [ ] Verify each project object satisfies the type with no TypeScript errors
+- [x] Decide and document all fields an the Project type (`slug`, `title`, `category`, `description`, `status`, `tags`, `links`, etc.)
+- [x] Define the Project type in `lib/types.ts`
+- [x] Define the `ProjectStatus` union type (e.g. `"active"` | `"available"` | `"in-development"`)
+- [x] Populate `lib/projects.ts` with the three real projects: `ContextLoop`, `USB Deploy Suite`, `Dev ToolBox`
+- [x] Verify each project object satisfies the type with no TypeScript errors
 
 ### 3. Homepage
 
