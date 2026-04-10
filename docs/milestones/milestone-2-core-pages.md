@@ -3,10 +3,10 @@
 ## Last Session
 
 **Date:** 2026-04-10
-**Was working on:** Section 1. Shared layout
-**Stopped because:** Completed Section 1
-**Next immediate step:** Start section 2 by deciding all the fields on the project type
-**Open question / gotcha:**
+**Was working on:** Completed Section 2 - started on section 3
+**Stopped because:** Completed the hero section in section 3
+**Next immediate step:** Build project grid
+**Open question / gotcha:** Should we implement the styles from the sceenshot in the design?
 
 ---
 
@@ -33,7 +33,7 @@ Build all core pages and shared layout components so the site is fully navigable
 
 ### 3. Homepage
 
-- [ ] Build hero section
+- [x] Build hero section
 - [ ] Build project grid driven by `lib/projects.ts`
 - [ ] Build about strip
 
