@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/nav/Nav";
 
 // Display font - used for headings and hero text
 // 'variable' injects --font-fraunces as a CSS custom property
@@ -33,7 +34,10 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
