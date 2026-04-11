@@ -6,9 +6,9 @@ export const projects: Project[] = [
     title: "ContextLoop",
     category: "Workflow Tool",
     shortDescription:
-      "Tracks prompt counts and session goals during AI-assisted development. Auto-generates a CONTEXT.md file via the Anthropic API when a configurable threshhold is reached.",
+      "Tracks prompt counts and session goals during AI-assisted development. Auto-generates a CONTEXT.md file via the Anthropic API when a configurable threshold is reached.",
     tags: ["React", "Anthropic API", "AI Workflow"],
-    status: "in-development",
+    status: "available",
     links: {
       github: "https://github.com/AkariForge/contextloop",
     },
@@ -20,9 +20,9 @@ export const projects: Project[] = [
     title: "USB Deploy Suite",
     category: "Windows Automation",
     shortDescription:
-      "A USB Tool for near 100% automation of windows installations. It uses an unattended.xml file to preconfigure choises during Windows install and OOBE.",
+      "A USB Tool for near 100% automation of windows installations. It uses an unattended.xml file to preconfigure choices during Windows install and OOBE.",
     tags: ["Autounattend", "provisioning packages", "Automation"],
-    status: "in-development",
+    status: "available",
     links: {
       github: "https://github.com/AkariForge/usbdeploysuite",
     },

@@ -1,5 +1,7 @@
 import Button from "@/components/ui/Button";
 import styles from "./page.module.css";
+import { projects } from "@/lib/projects";
+import ProjectCard from "@/components/ui/ProjectCard";
 
 export default function HomePage() {
   return (
@@ -22,6 +24,21 @@ export default function HomePage() {
           <Button href="#about" variant="secondary">
             About
           </Button>
+        </div>
+      </section>
+      <section className={styles.work} id="work">
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Selected Work</h2>
+          <span className={styles.sectionCount}>
+            {projects.filter((p) => p.featured).length} projects
+          </span>
+        </div>
+        <div className={styles.projectsGrid}>
+          {projects
+            .filter((p) => p.featured)
+            .map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
         </div>
       </section>
     </>
