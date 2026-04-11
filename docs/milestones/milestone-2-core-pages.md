@@ -2,11 +2,11 @@
 
 ## Last Session
 
-**Date:** 2026-04-10
-**Was working on:** Completed Section 2 - started on section 3
-**Stopped because:** Completed the hero section in section 3
-**Next immediate step:** Build project grid
-**Open question / gotcha:** Should we implement the styles from the sceenshot in the design?
+**Date:** 2026-04-11
+**Was working on:** Migrated styling from Tailwind CSS v4 to CSS Modules
+**Stopped because:** Migration complete and verified in browser
+**Next immediate step:** Build project grid driven by `lib/projects.ts`
+**Open question / gotcha:** Nav has a faint amber line at top of page - confirm if browser artifact or real style issue
 
 ---
 
@@ -22,6 +22,7 @@ Build all core pages and shared layout components so the site is fully navigable
 - [x] Create `components/footer/Footer.tsx`
 - [x] Wire both into `app/layout.tsx` around `{children}`
 - [x] Wrap `{children}` in `<main className="flex-1">` so footer sticks to bottom on short pages
+- [x] Migrate all components from Tailwind CSS v4 to CSS Modules (`Nav.module.css`, `ThemeToggle.module.css`, `Footer.module.css`, `Button.module.css`, `page.module.css`)
 
 ### 2. Project data layer
 

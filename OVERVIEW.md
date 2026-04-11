@@ -9,8 +9,8 @@ extensions to automation tools. It shows my self-directed approach to how I lear
 
 - **Runtime:** Node.js 20.9 or higher (currently running v24.14.0)
 - **Framework:** Next.js 16 - App Router, TypeScript
-- **Styling:** Tailwind CSS v4
-- **Components:** shadcn/ui
+- **Styling:** CSS Modules
+- **Components:** Hand-rolled in `components/ui/` - no external component library
 - **Hosting:** Netlify Free tier - upgrade when necessary
 - **Version control:** GitHub
 - **Payment (future):** Lemon Squeezy
@@ -28,6 +28,6 @@ extensions to automation tools. It shows my self-directed approach to how I lear
 
 - Project data lives in `lib/projects.ts` as a typed array - never hardcoded in JSX. Adding a project means adding one object to that array.
 - Reusable UI components live in `components/ui`. Route-level components - pages and layouts - live in `app/`.
-- All design tokens - colours, fonts, spacing - are defined in `globals.css` using Tailwind v4's `@theme` directive. Never hardcode raw values in components, and never use a separate `tailwind.config.ts`.
+- All design tokens - colours and fonts - are defined as CSS custom properties in `globals.css`. Component styles live in co-located `.module.css` files. Never hardcode raw values in components.
 - All variables use intention-revealing names that describe purpose, not shape. If you cover the right side of an assignment and only read the variable name, you should be able to make a confident guess about what it holds and why. Booleans are always phrased as yes/no questions using `is`, `has`, or `can` as a prefix.
 - Functions use verb + subject naming in simple present tense - `fetchProjects`, `validateEmail`, `toggleNav`.

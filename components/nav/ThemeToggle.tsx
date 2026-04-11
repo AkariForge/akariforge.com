@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -16,7 +17,7 @@ export default function ThemeToggle() {
     <button
       onClick={handleThemeToggle}
       aria-label="Toggle theme"
-      className="p-1.75 rounded-full flex items-center justify-center text-text-muted hover:text-text hover:bg-surface transition-colors cursor-pointer"
+      className={styles.toggleButton}
     >
       {isDarkMode ? (
         <svg

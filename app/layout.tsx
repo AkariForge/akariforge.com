@@ -33,11 +33,11 @@ export default function RootLayout({
     // anywhere in the document via var(--font-fraunces) etc.
     <html
       lang="en"
-      className={`${fraunces.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="min-h-full flex flex-col">
+      <body>
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
