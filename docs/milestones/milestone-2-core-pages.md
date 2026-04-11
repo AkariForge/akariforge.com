@@ -36,7 +36,7 @@ Build all core pages and shared layout components so the site is fully navigable
 
 - [x] Build hero section
 - [x] Build project grid driven by `lib/projects.ts`
-- [ ] Build about strip
+- [x] Build about strip
 
 ### 4. /work page
 
