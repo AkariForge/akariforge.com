@@ -26,6 +26,7 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
+
       <section className={styles.work} id="work">
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Selected Work</h2>
@@ -39,6 +40,47 @@ export default function HomePage() {
             .map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
+        </div>
+      </section>
+
+      <section className={styles.about} id="about">
+        <div className={styles.aboutContent}>
+          <p className={styles.aboutLabel}>About</p>
+          <h2 className={styles.aboutHeading}>
+            Developer &amp; toolsmith based in Odense, Denmark
+          </h2>
+          <p className={styles.aboutBody}>
+            I build tools that solve real problems in developer workflows - from
+            Windows automation pipelines to AI-assisted development utilities.
+            My focus is on clarity, craft, and understanding the root cause of
+            what I&apos;m building, not just shipping working code.
+          </p>
+          <p className={styles.aboutBody}>
+            AkariForge is the home for these projects. The portfolio you see now
+            is the beginning - a foundation being built with the intent to grow
+            into a full product offering.
+          </p>
+          <Button href="#work" variant="secondary">
+            View Work
+          </Button>
+        </div>
+        <div className={styles.stats}>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>3+</span>
+            <span className={styles.statLabel}>Projects</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>DK</span>
+            <span className={styles.statLabel}>Based in Denmark</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>JS</span>
+            <span className={styles.statLabel}>TypeScript / React</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>PS</span>
+            <span className={styles.statLabel}>PowerShell / Win</span>
+          </div>
         </div>
       </section>
     </>
