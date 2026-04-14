@@ -3,10 +3,10 @@
 ## Last Session
 
 **Date:** 2026-04-14
-**Was working on:** Section 5 - /about page
-**Stopped because:** Section 5 complete. Moving to Section 6 - /store placeholder.
-**Next immediate step:** Build /store placeholder page with heading, description, and email capture or notify prompt.
-**Open question / gotcha:** None.
+**Was working on:** Section 6 - /store placeholder
+**Stopped because:** Starting a new conversation.
+**Next immediate step:** Create app/store/page.tsx skeleton and co-located store.module.css, then confirm the route is live before building content into it.
+**Open question / gotcha:** Netlify Forms requires the form to be submitted through an actual Netlify deployment to register - it will not work on localhost. Plan to verify the form after deploying, not during local dev.
 
 ---
 
@@ -81,8 +81,15 @@ source of truth.
 
 ### 6. /store placeholder
 
-- [ ] Build store placeholder with a clear heading and one-line description of what's coming
-- [ ] Add an email capture or a "notify me" prompt so earlt visitors aren't just hitting a dead end
+**Decision: use Netlify Forms for email capture - no backend needed,
+submission data visible in the Netlify dashboard.**
+
+- [ ] Create `app/store/page.tsx` skeleton and co-located `store.module.css`
+- [ ] Build page header with "Store" heading and a one-line description of what's coming (developer tools, utilities, automation scripts)
+- [ ] Build a short product teaser block - two or three sentences on the kinds of tools that will be sold and who they're for
+- [ ] Build a Netlify Form email capture with a single email input and a submit button
+- [ ] Add a `data-netlify="true"` attribute to the form and a hidden `form-name` input so Netlify intercepts the submission correctly
+- [ ] Verify the form submits successfully on the Netlify deployment and appears in the Netlify dashboard under Forms
 
 ## Definition of Done
 
@@ -92,7 +99,7 @@ source of truth.
 - [x] `lib/projects.ts` contains at least three project entries
 - [x] `/` renders hero, project grid from data, and about strip
 - [x] `/work` renderes a full project list from data
-- [ ] `/about` renders the about page
+- [x] `/about` renders the about page
 - [ ] `/store` renders a placeholder page
 - [ ] `npm run lint` returns no errors
 - [ ] Netlify deployment succeeds with all routes
