@@ -2,11 +2,11 @@
 
 ## Last Session
 
-**Date:** 2026-04-11
-**Was working on:** Migrated styling from Tailwind CSS v4 to CSS Modules
-**Stopped because:** Migration complete and verified in browser
-**Next immediate step:** Build project grid driven by `lib/projects.ts`
-**Open question / gotcha:** Nav has a faint amber line at top of page - confirm if browser artifact or real style issue
+**Date:** 2026-04-14
+**Was working on:** Section 4 - /work page
+**Stopped because:** Section 4 complete. Section 5 tasks expanded and documented.
+**Next immediate step:** Add TimelineEntry and ContactLink types to lib/types.ts
+**Open question / gotcha:**
 
 ---
 
@@ -40,17 +40,44 @@ Build all core pages and shared layout components so the site is fully navigable
 
 ### 4. /work page
 
-- [ ] Build page header with title and project count
-- [ ] Build project list layout (one item per row, more detail that the homepage card)
-- [ ] Render all projects from `lib/projects.ts`
-- [ ] Show category, status badge, and stack tags per project
+- [x] Build page header with title and project count
+- [x] Build `ProjectRow` component in `components/ui/`
+- [x] Build project list layout (one item per row, more detail than the homepage card)
+- [x] Render all projects from `lib/projects.ts`
+- [x] Show category, status badge, and stack tags per project
+
+**Architectural decision - use a separate ProjectRow component**
+The /work page uses a horizontal list layout that is structurally different
+from the vertical grid card on the homepage. A `layout` prop on `ProjectCard`
+was considered and rejected - it would give one component two reasons to
+change, violating the Single Responsibility Principle. The correct approach
+is a separate `ProjectRow` component in `components/ui/` that accepts the
+same `project: Project` prop but renders a layout optimised for the list
+view. Presentation duplication across two components is acceptable; logic
+duplication is not. Both components pull from the same `lib/projects.ts`
+source of truth.
 
 ### 5. /about page
 
-- [ ] Build header block (name, role, availability status, location)
-- [ ] Build experience timeline from static data
-- [ ] Build education timeline from static data
-- [ ] Build contact links footer (email, GitHub, LinkedIn)
+**Types (`lib/types.ts`)**
+
+- [ ] Add `TimelineEntry` type with fields: `period`, `title`, `organisation`, `description`, and optional `badge`
+- [ ] Add `ContactLink` type with fields: `label`, `href`, and `icon`
+
+**Data (`lib/about.ts`)**
+
+- [ ] Export `isAvailableForWork` boolean
+- [ ] Export `experience` array typed as `TimelineEntry[]`
+- [ ] Export `education` array typed as `TimelineEntry[]`
+- [ ] Export `contactLinks` array typed as `ContactLink[]`
+
+**Page (`app/about/`)**
+
+- [ ] Create `page.tsx` skeleton and co-located `about.module.css`
+- [ ] Build header block consuming `isAvailableForWork`
+- [ ] Build experience timeline consuming `experience`
+- [ ] Build education timeline consuming `education`
+- [ ] Build contact links section consuming `contactLinks`
 
 ### 6. /store placeholder
 
@@ -61,10 +88,10 @@ Build all core pages and shared layout components so the site is fully navigable
 
 - [ ] Nav renders on every page with working links and the theme toggle
 - [ ] Footer renders on every page
-- [ ] `lib/types.ts` defines the Project type
-- [ ] `lib/projects.ts` contains at least three project entries
-- [ ] `/` renders hero, project grid from data, and about strip
-- [ ] `/work` renderes a full project list from data
+- [x] `lib/types.ts` defines the Project type
+- [x] `lib/projects.ts` contains at least three project entries
+- [x] `/` renders hero, project grid from data, and about strip
+- [x] `/work` renderes a full project list from data
 - [ ] `/about` renders the about page
 - [ ] `/store` renders a placeholder page
 - [ ] `npm run lint` returns no errors
