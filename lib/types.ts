@@ -25,3 +25,17 @@ export type Project = {
   featured?: boolean; // If true, appears pn the homepage grid
   publishedAt: string; // ISO 8601 date string: "2026-04-10"
 };
+
+export type TimelineEntry = {
+  period: string;
+  title: string;
+  organisation: string;
+  description: string;
+  badge?: string; // optional . not every entry has one
+};
+
+export type ContactLink = {
+  label: string;
+  href: string;
+  icon: React.ReactNode;
+};

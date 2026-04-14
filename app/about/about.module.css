@@ -1,0 +1,144 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(100px, 14vh, 140px) clamp(24px, 5vw, 60px) 80px;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.pageLabel {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-family: var(--font-fraunces);
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+.availabilityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 5px 12px;
+}
+
+/* Experience & education */
+.section {
+  margin-bottom: 72px;
+}
+
+.sectionLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+.timelineRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timelinePeriod {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  padding-top: 2px;
+  letter-spacing: 0.04em;
+}
+
+.timelineTitle {
+  font-size: 14px;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.timelineSub {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.timelineBadge {
+  display: inline-block;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 3px 8px;
+  margin-top: 10px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: color 0.2s;
+}
+
+.contactLink:last-child {
+  border-bottom: none;
+}
+
+.contactLink:hover {
+  color: var(--color-accent);
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s;
+}
+
+.contactLink:hover .contactIcon {
+  border-color: var(--color-accent);
+}

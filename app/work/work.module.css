@@ -11,22 +11,22 @@
   gap: 1.25rem;
   margin-bottom: 4rem;
   padding-bottom: 1.75rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .title {
-  font-family: var(--font-display);
+  font-family: var(--font-fraunces);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 300;
   letter-spacing: -0.03em;
-  color: var(--text);
+  color: var(--color-text);
 }
 
 .count {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--color-muted);
 }
 
 .list {

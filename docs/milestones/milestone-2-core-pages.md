@@ -3,10 +3,10 @@
 ## Last Session
 
 **Date:** 2026-04-14
-**Was working on:** Section 4 - /work page
-**Stopped because:** Section 4 complete. Section 5 tasks expanded and documented.
-**Next immediate step:** Add TimelineEntry and ContactLink types to lib/types.ts
-**Open question / gotcha:**
+**Was working on:** Section 5 - /about page
+**Stopped because:** Section 5 complete. Moving to Section 6 - /store placeholder.
+**Next immediate step:** Build /store placeholder page with heading, description, and email capture or notify prompt.
+**Open question / gotcha:** None.
 
 ---
 
@@ -61,23 +61,23 @@ source of truth.
 
 **Types (`lib/types.ts`)**
 
-- [ ] Add `TimelineEntry` type with fields: `period`, `title`, `organisation`, `description`, and optional `badge`
-- [ ] Add `ContactLink` type with fields: `label`, `href`, and `icon`
+- [x] Add `TimelineEntry` type with fields: `period`, `title`, `organisation`, `description`, and optional `badge`
+- [x] Add `ContactLink` type with fields: `label`, `href`, and `icon`
 
 **Data (`lib/about.ts`)**
 
-- [ ] Export `isAvailableForWork` boolean
-- [ ] Export `experience` array typed as `TimelineEntry[]`
-- [ ] Export `education` array typed as `TimelineEntry[]`
-- [ ] Export `contactLinks` array typed as `ContactLink[]`
+- [x] Export `isAvailableForWork` boolean
+- [x] Export `experience` array typed as `TimelineEntry[]`
+- [x] Export `education` array typed as `TimelineEntry[]`
+- [x] Export `contactLinks` array typed as `ContactLink[]`
 
 **Page (`app/about/`)**
 
-- [ ] Create `page.tsx` skeleton and co-located `about.module.css`
-- [ ] Build header block consuming `isAvailableForWork`
-- [ ] Build experience timeline consuming `experience`
-- [ ] Build education timeline consuming `education`
-- [ ] Build contact links section consuming `contactLinks`
+- [x] Create `page.tsx` skeleton and co-located `about.module.css`
+- [x] Build header block consuming `isAvailableForWork`
+- [x] Build experience timeline consuming `experience`
+- [x] Build education timeline consuming `education`
+- [x] Build contact links section consuming `contactLinks`
 
 ### 6. /store placeholder
 
