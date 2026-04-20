@@ -1,0 +1,131 @@
+.storePage {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(120px, 16vh, 160px) clamp(24px, 5vw, 60px) 80px;
+}
+
+.pageHeader {
+  margin-bottom: 80px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-family: var(--font-fraunces);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  max-width: 480px;
+}
+
+.teaser {
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 64px;
+}
+
+.teaserLabel {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin-bottom: 20px;
+}
+
+.teaserBody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.teaserBody p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--color-text-muted);
+}
+
+.notifySection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notifyLabel {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+.notifyDescription {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  max-width: 400px;
+}
+
+.formRow {
+  display: flex;
+  gap: 0;
+  margin-top: 8px;
+  max-width: 440px;
+}
+
+.emailInput {
+  flex: 1;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-right: none;
+  color: var(--color-text);
+  font-family: var(--font-jetbrains-mono);
+  font-size: 13px;
+  padding: 12px 16px;
+  outline: none;
+  transform: border-color 0.2s;
+}
+
+.emailInput:focus {
+  border-color: var(--color-border-hover);
+}
+
+.emailInput::placeholder {
+  color: var(--color-text-dim);
+}
+
+.submitButton {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  border: none;
+  font-family: var(--font-jetbrains-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.submitButton:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,61 @@
+import styles from "./store.module.css";
+
+export default function StorePage() {
+  return (
+    <div className={styles.storePage}>
+      <header className={styles.pageHeader}>
+        <p className={styles.eyebrow}>Store</p>
+        <h1 className={styles.heading}>Developer tools, built to last.</h1>
+        <p className={styles.subheading}>
+          Utilities, automation scripts, and workflow tools for developers who
+          care how things work.
+        </p>
+      </header>
+
+      <section className={styles.teaser}>
+        <p className={styles.teaserLabel}>Coming soon</p>
+        <div className={styles.teaserBody}>
+          <p>
+            The store will carry small, focused tools built for developer
+            workflows - things like the USB Deploy Suite and Dev Toolbox. No
+            subscriptions, no bloat. You buy it, you own it.
+          </p>
+          <p>
+            Every tool is built and maintained by one person, which means it
+            either solves a real problem or it does not ship. If you want to
+            know when something drops, leave your email below.
+          </p>
+        </div>
+      </section>
+
+      <section className={styles.notifySection}>
+        <p className={styles.notifyLabel}>Get notified</p>
+        <p className={styles.notifyDescription}>
+          Leave your email and you will be the first to know when something
+          launches.
+        </p>
+        <form
+          className={styles.notifyForm}
+          name="store-notify"
+          method="POST"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="store-notify" />
+          <div className={styles.formRow}>
+            <input
+              className={styles.emailInput}
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              aria-label="Email address"
+            />
+            <button className={styles.submitButton} type="submit">
+              Notify me
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  );
+}
