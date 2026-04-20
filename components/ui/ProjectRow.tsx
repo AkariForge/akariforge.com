@@ -19,9 +19,9 @@ export default function ProjectRow({ project }: Props) {
           {project.status}
         </span>
         <ul className={styles.tags}>
-          {project.tags.map((tag) => (
-            <li key={tag} className={styles.tag}>
-              {tag}
+          {project.stack.map((technology) => (
+            <li key={technology} className={styles.tag}>
+              {technology}
             </li>
           ))}
         </ul>
