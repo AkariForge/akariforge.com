@@ -2,11 +2,11 @@
 
 ## Last Session
 
-**Date:** 2026-04-14
+**Date:** 2026-04-20
 **Was working on:** Section 6 - /store placeholder
-**Stopped because:** Starting a new conversation.
-**Next immediate step:** Create app/store/page.tsx skeleton and co-located store.module.css, then confirm the route is live before building content into it.
-**Open question / gotcha:** Netlify Forms requires the form to be submitted through an actual Netlify deployment to register - it will not work on localhost. Plan to verify the form after deploying, not during local dev.
+**Stopped because:** Milestone 2 complete.
+**Next immediate step:** Begin Milestone 3 - dynamic project pages (/work/[slug]).
+**Open question / gotcha:** None
 
 ---
 
@@ -89,17 +89,17 @@ submission data visible in the Netlify dashboard.**
 - [x] Build a short product teaser block - two or three sentences on the kinds of tools that will be sold and who they're for
 - [x] Build a Netlify Form email capture with a single email input and a submit button
 - [x] Add a `data-netlify="true"` attribute to the form and a hidden `form-name` input so Netlify intercepts the submission correctly
-- [ ] Verify the form submits successfully on the Netlify deployment and appears in the Netlify dashboard under Forms
+- [x] Verify the form submits successfully on the Netlify deployment and appears in the Netlify dashboard under Forms
 
 ## Definition of Done
 
-- [ ] Nav renders on every page with working links and the theme toggle
-- [ ] Footer renders on every page
+- [x] Nav renders on every page with working links and the theme toggle
+- [x] Footer renders on every page
 - [x] `lib/types.ts` defines the Project type
 - [x] `lib/projects.ts` contains at least three project entries
 - [x] `/` renders hero, project grid from data, and about strip
 - [x] `/work` renderes a full project list from data
 - [x] `/about` renders the about page
-- [ ] `/store` renders a placeholder page
-- [ ] `npm run lint` returns no errors
-- [ ] Netlify deployment succeeds with all routes
+- [x] `/store` renders a placeholder page
+- [x] `npm run lint` returns no errors
+- [x] Netlify deployment succeeds with all routes
