@@ -1,4 +1,5 @@
 import styles from "./store.module.css";
+import StoreNotifyForm from "@/components/ui/StoreNotifyForm";
 
 export default function StorePage() {
   return (
@@ -34,27 +35,7 @@ export default function StorePage() {
           Leave your email and you will be the first to know when something
           launches.
         </p>
-        <form
-          className={styles.notifyForm}
-          name="store-notify"
-          method="POST"
-          data-netlify="true"
-        >
-          <input type="hidden" name="form-name" value="store-notify" />
-          <div className={styles.formRow}>
-            <input
-              className={styles.emailInput}
-              type="email"
-              name="email"
-              placeholder="your@email.com"
-              required
-              aria-label="Email address"
-            />
-            <button className={styles.submitButton} type="submit">
-              Notify me
-            </button>
-          </div>
-        </form>
+        <StoreNotifyForm />
       </section>
     </div>
   );

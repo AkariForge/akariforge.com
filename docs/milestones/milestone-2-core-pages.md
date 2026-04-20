@@ -84,11 +84,11 @@ source of truth.
 **Decision: use Netlify Forms for email capture - no backend needed,
 submission data visible in the Netlify dashboard.**
 
-- [ ] Create `app/store/page.tsx` skeleton and co-located `store.module.css`
-- [ ] Build page header with "Store" heading and a one-line description of what's coming (developer tools, utilities, automation scripts)
-- [ ] Build a short product teaser block - two or three sentences on the kinds of tools that will be sold and who they're for
-- [ ] Build a Netlify Form email capture with a single email input and a submit button
-- [ ] Add a `data-netlify="true"` attribute to the form and a hidden `form-name` input so Netlify intercepts the submission correctly
+- [x] Create `app/store/page.tsx` skeleton and co-located `store.module.css`
+- [x] Build page header with "Store" heading and a one-line description of what's coming (developer tools, utilities, automation scripts)
+- [x] Build a short product teaser block - two or three sentences on the kinds of tools that will be sold and who they're for
+- [x] Build a Netlify Form email capture with a single email input and a submit button
+- [x] Add a `data-netlify="true"` attribute to the form and a hidden `form-name` input so Netlify intercepts the submission correctly
 - [ ] Verify the form submits successfully on the Netlify deployment and appears in the Netlify dashboard under Forms
 
 ## Definition of Done
