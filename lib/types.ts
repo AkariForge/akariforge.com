@@ -1,4 +1,9 @@
 // A union type forces every project to use one of these exact strings.
+export type ProjectFeature = {
+  label: string;
+  description?: string;
+};
+
 export type ProjectStatus = "available" | "in-development" | "archived";
 
 export type ProjectCategory =
@@ -41,9 +46,4 @@ export type ContactLink = {
   label: string;
   href: string;
   icon: React.ReactNode;
-};
-
-export type ProjectFeature = {
-  label: string;
-  description: string;
 };

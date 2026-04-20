@@ -3,10 +3,10 @@
 ## Last Session
 
 **Date:** 2026-04-20
-**Was working on:** Planning milestone 3
-**Stopped because:** Milestone file creation
-**Next immediate step:** Add `getProjectBySlug` to `lib/projects.ts`
-**Open question / gotcha:** Image paths in `projects.ts` cannot be populated until screenshots are ready. The type and folder structure are in place - defer data population until files exist.
+**Was working on:** Section 1 - data layer
+**Stopped because:** Taking a break
+**Next immediate step:** Create `app/not-found.tsx` - Section 2, step 1
+**Open question / gotcha:** Image paths in `projects.ts` cannot be populated until screenshots are ready. Capture screenshots at a consistent resolution and export to `public/images/projects/[slug]/` before populating the `images` field.
 
 ---
 
@@ -18,8 +18,8 @@ Build the `/work/[slug]` dynamic route so every project in `lib/projects.ts` has
 
 ### 1. Data layer
 
-- [ ] Add `getProjectBySlug(slug: string): Project | undefined` to `lib/projects.ts`
-- [ ] Populate `longDescription` and `features` on all three projects in `lib/projects.ts`
+- [x] Add `getProjectBySlug(slug: string): Project | undefined` to `lib/projects.ts`
+- [x] Populate `longDescription` and `features` on all three projects in `lib/projects.ts`
 - [ ] Populate `images` paths on all three projects once screenshots are ready
 
 ### 2. Routing and error handling

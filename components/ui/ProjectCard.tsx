@@ -12,9 +12,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <h3 className={styles.title}>{project.title}</h3>
       <p className={styles.description}>{project.shortDescription}</p>
       <div className={styles.tags}>
-        {project.tags.map((tag) => (
-          <span key={tag} className={styles.tag}>
-            {tag}
+        {project.stack.map((technology) => (
+          <span key={technology} className={styles.tag}>
+            {technology}
           </span>
         ))}
       </div>
